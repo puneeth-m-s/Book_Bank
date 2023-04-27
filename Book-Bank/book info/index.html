@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <link rel="stylesheet" href="color.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Document</title>
+ </head>
+ <body>
+    <div class="img"></div>
+    <div class="container">
+      <form class="container2">
+            <div class="step1">
+               <h3>BOOK INFORMATION</h3>             
+                <input type="text" placeholder="Enter title" required> 
+                      <div class="dropdown">
+                          <select name="category" class="category">
+                          <option value="None">select the category</option>
+                           <option value="CS">Computer Scince</option>
+                           <option value="ME">Mechanical Engineering</option>
+                           <option value="EE">Electric Engineering</option>
+                           <option value="AE">Automobile Engineering</option>
+                           <option value="CE">Civil Engineering</option>
+                           <option value="EEE">Electrical and Electronic Engineering</option>
+                          </select> 
+                             </div>
+                               <div class="dropdown1">
+                                  <select name="category2" class="category">
+                                          <option value="None">Book Condition</option>
+                                          <option value="CS">New</option>
+                                          <option value="ME">Used</option>
+                                  </div>  
+
+                                       <div class="title">  
+                                          <input type="text" placeholder="Author Name" required>
+
+                                         <input type="text" placeholder="Original price" required>  
+
+                                         <input type="text" placeholder="Descount Price" required>
+
+                                         <input type="text" placeholder="Edition year" required>
+
+                                         <input type="file" id="file" accept="image/png,image/jpeg" > 
+                                         <label for="file" >
+                                          <i class="material-icons" aria-valuemax="photo">
+                                               photo
+                                          </i> &nbsp;
+                                         </label>   
+
+                                         <textarea placeholder="Book Description" class="description"></textarea>
+                                       </div> 
+         </div>
+
+         <div class="seller"> 
+            <h3 class="h3"> SELLER INFORMATION</h3>
+            <input type="text" placeholder=" Seller Name" required>
+            <input type="text" placeholder="Contact" required>
+            <input type="text" placeholder="Location" required>
+                      
+            <button type="submit" class="btn">Submit</button>
+            </div>
+                  
+      </form>
+         </div>
+                     
+        
+ </body>
+ </html>
+ 
