@@ -22,7 +22,7 @@ nav ul li::after{
   content: '';
   width: 0%;
   height: 2px;
-  background: rgb(245, 132, 132);
+  background:#02598b;
   display:block;
   margin:auto;
   transition: 0.5s;
@@ -44,52 +44,61 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .heading{
   padding-left: 40px;
 }
-.search-bar input{
-  color: rgb(19, 17, 17);
-}
-.search-bar{
-  width: auto;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.search-bar form button{
-  font-size: 18px;
-  background-color: rgb(249, 68, 36);
-  border-radius: 0px;
-  padding: 10px;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-.search-bar form button.active,
-.search-bar form button:hover{
-  background-color: #e92a08;
-}
-
-.search-bar form{
-  height: 55px;
-  width: 600px;
-  display: flex;
-}
-.search-bar form input{
-  font-size: 18px;
-  height: 43px;
-  flex: 1;
-  border: none;
-  outline: none;
-
-}
-
+/* Styling for the search bar */
+    .search-container {
+      float: right;
+      padding-right: 20px;
+      position: relative;
+      display: inline-block;
+      
+    }
+    
+    .search-container input[type=text] {
+      padding: 10px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+      width: 300px;
+    }
+    
+    .search-container button {
+      padding: 10px;
+      margin-top: 8px;
+      background: #ccc;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    /* Styling for the dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .show {
+      display: block;
+    }
 section {
   padding: 10px;
 }
@@ -99,7 +108,7 @@ section h1 {
 }
 section h2 {
   padding-left: 35px;
-  color: #e92a08;
+  color:#02598b;
   font-size: 24px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 10px;
@@ -113,6 +122,7 @@ section ul {
 section ul img{
   height: 200px;
   width: 150px;
+  max-width: 150px;
 }
 section li {
   justify-content: space-between;
@@ -132,7 +142,8 @@ li button a {
 }
 
 section img {
-  width: 100%;
+  max-width: 100%;
+  max-height:200px;
 }
 section h3 {
   font-size: 18px;
@@ -159,18 +170,20 @@ section ul {
   justify-content: space-around;
   margin: 15px;
 }
-.all-view h5 button{
+.all-view.h5 button{
+  position: relative;
   background-color: black;
   float: right;
   margin-right: 45px;
+
 }
+
 h5 button a {
   text-align: center;
   float:right;
   color: #f1eeee;
   text-decoration:none;
   padding-top: 0px;
-  padding-right: 0px;
 }
 
 footer{
@@ -196,4 +209,68 @@ height: 45px;
 }
 div form span{
   padding-left: 10px;
+}
+section img:hover{
+   transform:translateY(-1rem);
+}
+
+  .CS,
+  .ME,
+  .EC,
+  .CE,
+  .AM,
+  .EE{
+    position: relative;
+    background-color:#e9ecec;
+    top: 20px;
+  }
+
+  h2,
+  h3
+  ,p{
+          font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
+          
+  }
+
+
+h2{
+  position: relative;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #02598b;
+  margin-bottom: .5em;
+  margin-top: 1.75em;
+  text-decoration: underline;
+  margin-left: 2rem;
+}
+
+h2:hover{
+  color: #43a35b;
+}
+footer {
+  background-color: #524e4e;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(255, 251, 251);
+}
+
+footer a {
+  color: rgb(255, 251, 251);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+footer.line{
+  float: inline-start;
+}
+footer img{
+  height: 50px;
+  width: 50px;
+  justify-content: space-around;
+}
+footer .terms{
+  text-align: right;
 }

@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 body{
   min-height: 100vh;
   display: flex;
@@ -12,11 +13,12 @@ body{
   justify-content: center;
   background: #4070f4;
 }
+
 .sign{
   align-content: center;
   position: relative;
   max-width: 430px;
-  height: 600px;
+  height: 500px;
   width: 100%;
   background: #fff;
   padding: 34px;
